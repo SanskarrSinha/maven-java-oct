@@ -1,14 +1,5 @@
 node{
-I would like to update you regarding the Terraform execution issue I am currently facing.
 
-While working on the Environment Provisioning Template, I attempted to run the configuration locally as well as through Azure Cloud Shell for validation. However, the initialization fails due to the use of a private provider (manulife-ets/bluemouse), which is not available in the public Terraform registry.
-
-After reviewing the configuration, I noticed that the setup is designed to run via Terraform Cloud (MFC-TFC-Prod organization) using remote execution and private provider access. Since I currently have only Read access to the Terraform Cloud workspace, I am unable to trigger or execute plans/applies from there.
-
-To proceed with testing and validation, I would require the appropriate access level (Plan/Run or Write access) on the relevant Terraform Cloud workspace.
-
-Please let me know if any approval or additional steps are required from my side.
-def maven = tool name: "latest"
 
 echo "node running name: ${env.NODE_NAME} "
 
